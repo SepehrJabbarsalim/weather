@@ -126,7 +126,11 @@ function fetchWeatherData(){
             icon.src=`./assets/icons/cloud.png`;
         }else if(code == 805 || code == 806){
             app.style.backgroundImage =`url(./assets/images/rainy-${timeOfDay}.jpg)`;
+            icon.src=`./assets/icons/rainy.png`;
+        }else{
+        icon.src=`./assets/icons/clear-day.png`;
         }
+            
         app.style.opacity="1";
         nameOutput.innerHTML=cityInput;
     })
